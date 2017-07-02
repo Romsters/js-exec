@@ -1,0 +1,10 @@
+{
+  "globals": {
+    "parseInt": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "global-require": ["off"]
+  },
+  "extends": ["airbnb-base", "easygenerator"]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "js-exec",
+  "version": "1.0.0",
+  "description": "Service that returns results of provided JavaScript files execution",
+  "main": "./src/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "precommit": "npm run lint",
+    "test": "jasmine-node --verbose ./",
+    "lint": "eslint -c .eslintrc ./",
+    "start": "./scripts/start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romsters/js-exec.git"
+  },
+  "keywords": [
+    "js",
+    "execution",
+    "service",
+    "remote",
+    "API"
+  ],
+  "author": "petriv.roma@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Romsters/js-exec/issues"
+  },
+  "homepage": "https://github.com/Romsters/js-exec#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-easygenerator": "^1.0.1",
+    "eslint-plugin-import": "^2.6.1",
+    "husky": "^0.14.1",
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "lodash": "^4.17.4",
+    "redis": "^2.7.1",
+    "vm2": "^3.4.6"
+  }
+}
